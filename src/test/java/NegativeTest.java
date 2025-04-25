@@ -30,7 +30,7 @@ public class NegativeTest {
     }
 
     @Test
-    void SendingFormTestWithInvalidName() throws InterruptedException {
+    void sendingFormTestWithInvalidName() throws InterruptedException {
         driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Gavrina Anastasia");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79290236555");
@@ -41,7 +41,7 @@ public class NegativeTest {
     }
 
     @Test
-    void SendingFormTestWithoutName() throws InterruptedException {
+    void sendingFormTestWithoutName() throws InterruptedException {
         driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79290236555");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
@@ -51,7 +51,7 @@ public class NegativeTest {
     }
 
     @Test
-    void SendingFormTestWithOutPhoneNumber() throws InterruptedException {
+    void sendingFormTestWithOutPhoneNumber() throws InterruptedException {
         driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Гаврина Анастасия");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
@@ -61,7 +61,7 @@ public class NegativeTest {
     }
 
     @Test
-    void SendingFormTestWithInvalidPhoneNumber() throws InterruptedException {
+    void sendingFormTestWithInvalidPhoneNumber() throws InterruptedException {
         driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Гаврина Анастасия");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("Phone number");
@@ -72,7 +72,7 @@ public class NegativeTest {
     }
 
     @Test
-    void SendingFormTestWithOutCheckBox() throws InterruptedException {
+    void sendingFormTestWithOutCheckBox() throws InterruptedException {
         driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Гаврина Анастасия");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79290236555");
